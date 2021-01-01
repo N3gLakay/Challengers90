@@ -1,0 +1,124 @@
+img {
+  max-width: 100%;
+  height: 100%;  
+}
+h4 {margin:0px}
+div h2 {padding-bottom: 30px;}
+
+.header {background-color: cyan;}
+
+
+.alma_mater {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+
+.retrouvaille {
+  height: 160px;
+  border: 1px solid green;
+  padding-bottom: 80px;
+  margin: 5px;}
+  
+
+  
+  .flex-container {
+  background-color: lightcyan;
+  float: left;
+  width: 10%;
+  height: auto;
+  margin-bottom: 80px;
+ 
+  
+}
+
+
+ 
+ .footer {
+        width: 100%;
+        height: 12%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        background-size: 100% 100%;
+        justify-content: center;
+    }
+	
+	.footer p {
+        color: white;
+        font-size: 1.25em;
+    }
+	
+
+
+body {background-color: lightcyan; font-family: Arial; font-weight: bold; font-size: 15px; background-image: url("Carrefour.jpeg");}
+h1 {font-size: 40px; color: tomato; }
+h2 {font-size: 30px; color: tomato; }
+
+p {font-size: 20px; font-weight: bold; color: white;}
+
+main {text-align: center; }
+
+ol,ul {
+	list-style: none;
+}
+/*Set the width and margins of the menu:*/
+#mainMenu {
+	margin: 10px;
+	width: 900px;
+	font-family: sans-serif;
+}
+/*Setting the width prevents the menu from wrapping when the user shrinks the browser window.
+Set the list items to display as blocks, give them a width, and float them to the left so that they'll each display to the right of the preceding item.*/
+
+#mainMenu li {
+	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+/*Change the a elements to block elements. We'll also add some formatting styles and remove the underline with text-decoration: none.*/
+
+#mainMenu a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:#009;
+}
+			
+/*Finally, change the hover state of the links so that they highlight when a user points to them.*/
+
+#mainMenu a:hover {
+	background-color:#009;
+	color:#fff;
+}
+/*The finished CSS should look like the following:*/
+
+#mainMenu {
+	margin:10px;
+	width:900px;
+	font-family: sans-serif;
+}
+#mainMenu li {
+	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+
+#mainMenu a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:#009;
+}
+
+#mainMenu a:hover {
+	background-color:#009;
+	color:#fff;
+}
