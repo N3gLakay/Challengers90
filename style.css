@@ -1,28 +1,42 @@
 
- img {
-  max-width: 100%;
-  height: 140px;
-  background-color: lightgreen;
+* {
+  box-sizing: border-box;
 }
 
-body {font-family: 'Roboto', sans-serif; color: white; background-color: lightcyan; background-image: url('Carrefour_Haiti.jpg');}
+.header {background-color: cyan;}
+
+.row {
+  display: flex;
+}
 
 
-h1 {font-size: 40px;}
 
-p {font-size: 20px; font-weight: bold;}
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.flex-container {
+  width: 100%;
+  margin: 1px;
+  height: auto;  
+}
+
+  
+ body {background-color: lightcyan; font-family: Arial; font-weight: bold; font-size: 15px; background-image: url("Carrefour.jpeg");}
+h1 {font-size: 40px; color: tomato; }
+h2 {font-size: 30px; color: tomato; }
+p {font-size: 20px; font-weight: bold; color: white;}
 
 main {text-align: center; }
 
- header {
-  /*Initial Style of header*/
-  height: 120px; text-align: center; background: lightgreen;
-} 
-ol,ul {
-	list-style: none;
-}
 /*Set the width and margins of the menu:*/
-#Menu {
+#mainMenu {
 	margin: 10px;
 	width: 900px;
 	font-family: sans-serif;
@@ -30,7 +44,7 @@ ol,ul {
 /*Setting the width prevents the menu from wrapping when the user shrinks the browser window.
 Set the list items to display as blocks, give them a width, and float them to the left so that they'll each display to the right of the preceding item.*/
 
-#Menu li {
+#mainMenu li {
 	display:block;
 	width:120px;
 	float:left;
@@ -39,7 +53,7 @@ Set the list items to display as blocks, give them a width, and float them to th
 }
 /*Change the a elements to block elements. We'll also add some formatting styles and remove the underline with text-decoration: none.*/
 
-#Menu a {
+#mainMenu a {
 	display:block;
 	padding:3px;
 	text-decoration:none;
@@ -49,18 +63,18 @@ Set the list items to display as blocks, give them a width, and float them to th
 			
 /*Finally, change the hover state of the links so that they highlight when a user points to them.*/
 
-#Menu a:hover {
+#mainMenu a:hover {
 	background-color:#009;
 	color:#fff;
 }
 /*The finished CSS should look like the following:*/
 
-#Menu {
+#mainMenu {
 	margin:10px;
 	width:900px;
 	font-family: sans-serif;
 }
-#Menu li {
+#mainMenu li {
 	display:block;
 	width:120px;
 	float:left;
@@ -68,7 +82,7 @@ Set the list items to display as blocks, give them a width, and float them to th
 	border:1px solid #000;
 }
 
-#Menu a {
+#mainMenu a {
 	display:block;
 	padding:3px;
 	text-decoration:none;
@@ -76,10 +90,42 @@ Set the list items to display as blocks, give them a width, and float them to th
 	color:#009;
 }
 
-#Menu a:hover {
+#mainMenu a:hover {
 	background-color:#009;
 	color:#fff;
 }
 
+#footer {position: fixed;
+  left: 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;}
+  
+  .footer {position: fixed;
+        left: 0;
+		bottom: 0;
+	    width: 100%;
+        height: 10%;
+        background-color: black;
+        display: flex;
+        background-size: 100%;
+        justify-content: space-between;
+		
+    }
+	
+	.footer p {
+        color: white;
+        font-size: 1.25em;
+    }
 
- 
+
+		
+	
+	
+	
+
